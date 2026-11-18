@@ -33,8 +33,6 @@ From a shell:
 claude plugin install subagent-router --marketplace domenicomansi98/subagent-router
 ```
 
-This repository is private: you need access to it on GitHub, and GitHub set up on your computer.
-
 ### Cloud sessions
 
 Add this to the project's `.claude/settings.json` so every cloud session for that project loads the mod:
