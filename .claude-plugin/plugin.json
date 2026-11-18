@@ -1,0 +1,27 @@
+{
+  "name": "subagent-router",
+  "version": "0.1.0",
+  "description": "Picks the model and effort for each sub-agent from the task, and nudges the main session to delegate token-heavy work.",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "respectExplicitModel": {
+      "type": "boolean",
+      "title": "Respect a model the caller chose",
+      "description": "When on, a sub-agent call that already names a model keeps it; only effort is filled in.",
+      "default": true
+    },
+    "topModel": {
+      "type": "string",
+      "title": "Model for complex tasks",
+      "description": "Model used for planning, architecture, deep debugging and reviews.",
+      "options": ["opus", "fable", "sonnet"],
+      "default": "opus"
+    },
+    "delegationGuidance": {
+      "type": "boolean",
+      "title": "Add delegation guidance to the system prompt",
+      "description": "Tells the main session to hand searches and independent sub-tasks to sub-agents with tight briefs.",
+      "default": true
+    }
+  }
+}

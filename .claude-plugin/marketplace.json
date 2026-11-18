@@ -1,0 +1,11 @@
+{
+  "name": "subagent-router",
+  "owner": { "name": "domenicomansi98" },
+  "plugins": [
+    {
+      "name": "subagent-router",
+      "source": "./",
+      "description": "Picks the model and effort for each sub-agent from the task, and shows running sub-agents in a pane."
+    }
+  ]
+}
